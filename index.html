@@ -4,10 +4,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Bootstrap Portfolio</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="bootstrap_files/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Armata|Crimson+Text|Monoton" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Nick Brown</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptate repellat magnam, est sapiente sunt! Illum maxime iste facere nulla natus unde, libero quae totam vel, id nesciunt? Id, in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error sint harum itaque dolor? Repellat, sint.</p>
+
+    <!-- navbar start -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"> &lt; N-B &gt;</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">                                  
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="active" href="index.html">About Me</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- jumbotron start -->
+    <div class="jumbotron jumbo-styling">
+        <div class="container jumbotron-sub-heading">
+            <h1>Nick Brown</h1>
+            <h3>Front End Developer and Designer</h2>
+        </div>
+    </div>
+    <!-- jumborton end-->
+
+    
+    <div class="container">
+        <div class="row">
+
+            <!-- about me section start -->
+            <div class="col-md-7 about-me">
+                <h1 class="content-heading">About Me</h1>
+                <div class="row about-me-head">
+                    <div class="col-sm-5 col-md-6 col-lg-5 profile-image-body">
+                        <img class="profile-image" src="css/images/profilePic.jpg" alt="Profile Picture of Nick Brown.">
+                    </div>
+                    <div class="col-sm-7 col-md-6 col-lg-7 about-me-para-1">
+                        <p>
+                            If you are reading this, then you are either a recruiter/company looking for a new addition to your team, or you are an incredibly
+                            lost internet traveler. In the case of the later you may want to see you self to the "go back" button as this website
+                            merely showcases some of my work and a how to contact me, though you are welcome to stay and explore! In the case of
+                            the former, welcome to my portfolio website.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 main-para-text">
+                        <p>
+                            My name is Nick Brown. I am currently living in Salt Lake City, Utah. I am an avid outdoorsman and can often be found on
+                            a bike, paddleboard, or mountainside exploreing the outdoors. When I am not spending time outside I am inside most likely
+                            reading, writing, or editing code. Around a year ago I found myself looking for a new challenge in life and was met by
+                            the complex world of code. Since then I have spent my time absorbing as much information as possible from every source
+                            I can find.
+                        </p>
+                        <p>
+                            My technical coding skills include experience in: HTML5, CSS3, JavaScript, and soon to be many more languages. As for my
+                            other professional skills, I have spent the majority of my professional career at the retail cooperative REI (Recreational
+                            Equipment Inc.). In that time, I worked my way up from customer service, to sales, then into the shop as a tech level
+                            1, then onto the dock working in order fulfillment, and finally as the operations sales lead. While working as an operations
+                            lead, I helped oversee shipping and receiving and inventory management. As a team leader at the store it was my job to
+                            help guide employees working under the operations umbrella in addition to running our semi-annual store inventory periods
+                            and large used gear sales.
+                        </p>
+                        <p>
+                            If you have any questions or inquiries please see the contact me tab at the top of the screen, or click on one of the available
+                            links to my social media accounts. To any of the lost internet travels who are still sticking around, please click
+                            <a
+                                href="http://www.youtube.com" target="_blank">here</a> to find a link to YouTube where your internet wanderings may continue. Thank you for reading and have a wonderful
+                                rest of your day!
+                        </p>
+                        <p>
+                            - Nick Brown
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- about me section end -->
+
+            <!-- social media links start -->
+            <div class="col-md-4 social-media">
+                <h2 class="social-media-links_heading">Connect with Me</h2>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <a href="https://github.com/nick-d-brown" target="_blank">
+                            <img class="social_media_images" src="css/images/if_github_square_black_107109.png" alt="Logo for GitHub with link to Nick Brown's account.">
+                        </a>
+                    </div>
+                    <div class="col-xs-4">
+                        <a href="https://www.linkedin.com/in/nicholas-brown-developer/" target="_blank">
+                            <img class="social_media_images" src="css/images/if_linkedin_square_color_107091.png" alt="Logo for Linkedin with link to Nick Brown's account.">
+                        </a>
+                    </div>
+                    <div class="col-xs-4">
+                        <a href="https://stackoverflow.com/users/8822598/nick-brown" target="_blank">
+                            <img class="social_media_images_altered" src="css/images/if_stackoverflow_273179.png" alt="Logo for Stackoverflow with link to Nick Brown's account.">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- social media links end -->
+            
+        </div>
+    </div>
+
+    <!-- footer start -->
+
+    <footer>
+        <div class="container-fluid copyright-styling">
+            <h5> &copy; 2018 Nick Brown</h5>
+        </div>
+    </footer>
+    
+    <!-- footer end -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap_files/js/bootstrap.min.js"></script>
 </body>
 </html>
