@@ -48,7 +48,7 @@ div.jumbotron.jumbo-styling {
 
 /* jumbotron styling end */
 
-/* about me section styling start */
+/* home section styling start */
 
 .about-me {
     background:rgb(215, 215, 215);
@@ -85,7 +85,25 @@ div.jumbotron.jumbo-styling {
     margin: .5% auto;   
 }
 
-/* about me section styling end */
+.home-info-header {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.skill-list{
+    list-style-type: circle;
+}
+
+.logo-images {
+    width: 125px;
+    height: 125px;
+}
+
+.work-exp-body {
+    text-align: center;
+}
+
+/* home section styling end */
 
 /* portfolio section start */
 
@@ -116,6 +134,36 @@ p.project-description {
 
 /* portfolio section start */
 
+/* about me section styling start */
+
+.contact-me {
+    background:rgb(215, 215, 215);
+    margin: 1% 2%;
+    padding: 1% 3%;
+}
+.contact-heading {
+    padding: 2px;
+    border-bottom: 2px solid rgb(138, 130, 130);
+}
+
+.textbox-styling {
+    min-height: 200px;
+    min-width: 100%;
+    max-width: 100%;
+}
+.profile-image-aboutme { 
+    height: 100%;
+    width: 100%;
+    padding: 0px 10px;
+    margin: 25px 0px;
+}
+
+.road-img {
+    width: 100%;
+    height: 100%;
+}
+
+/* about me sectino styling end */
 /* contact me section styling start */
 
 .contact-me {
