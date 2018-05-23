@@ -1,0 +1,407 @@
+/* default changes */
+
+nav, nav a, nav li, nav ul a {
+  background-color: transparent;
+  color: black;
+
+}
+
+/* general style rules */
+
+
+.section  {
+  margin:6rem 0;
+}
+
+.header {
+  /* text-decoration: underline; */
+  letter-spacing: .1em;
+  line-height: 1.5em;
+  border-bottom: solid 2px black;
+  text-align: center;
+}
+
+/* nav bar */
+
+.styled-nav {
+  display: inline-flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 20px;
+  background-color: white;
+  font-weight: 700;
+
+}
+
+.logo {
+  display: flex;
+  justify-content: start;
+  /* padding: 0 10px; */
+  position: relative;
+  left: 3%;
+  
+}
+.links {
+  display: inline-flex;
+  justify-content: end;
+  position: relative;
+  left: -3%;
+}
+
+.links li {
+padding: 0 10px;
+
+}
+
+/*  parallax header */
+
+.parallax-container {
+  height: 280px;
+  -webkit-transition: height 3s; /* For Safari 3.1 to 6.0 */
+  transition: height 3s;
+  margin-bottom: 20px;
+}
+
+.parallax-container .parallax img {
+  /* max-width: 80%; */
+  /* background-size: cover; */
+   background-position: 50% 0px;
+}
+
+.parallax img {
+  max-width: 60%;
+}
+
+.reflect {
+    -webkit-box-reflect: below -3px -webkit-gradient(linear, left top, left bottom,  from(transparent), color-stop(29%, transparent), to(rgba(255, 255, 255, 0.72)));
+    -webkit-transition: top 2s, left 2s, font-size 3s; /* For Safari 3.1 to 6.0 */
+    transition: top 2s, left 2s, font-size 3s;
+    font-size: 3em;
+    color: #000000;
+    font-weight:bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    position: absolute;
+    top: 54%;
+    left: 10%;
+    /* text-align: center; */
+}
+
+
+
+/* About Section */
+
+.about-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.hello  {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.quick-pitch {
+  font-size: 1.3em;
+  letter-spacing: 2px;
+  margin: 25px 0;
+  font-weight: 500;
+}
+
+.about-me-cont {
+    font-size: 1.0em;
+    letter-spacing: 2px;
+    line-height: 20px;
+    margin-bottom: 25px;
+
+}
+
+.learn-more-button {
+  background-color: transparent;
+  color: black;
+  padding: 5px;
+  border: solid 2px black;
+  width: 25%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.learn-more-button:hover {
+  background-color: transparent;
+  color: rgb(123, 123, 123);
+  border: solid 2px rgb(172, 171, 171);
+  position: relative;
+  bottom: -2px;
+  left: 2px;
+}
+
+.hidden-html {
+  display: none;
+  -webkit-transition: display 3s; /* For Safari 3.1 to 6.0 */
+  transition: display 3s;
+
+}
+
+.skill-list {
+  
+}
+
+.list-container {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.list-column {
+  margin: 1% 5%;
+  width: 200px
+}
+.list-column li {
+  margin: 5% 0;
+  
+}
+
+.list-row-header {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.resume-img-section {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.click-to-view {
+  text-decoration: none;
+  color: black;
+  width: 200px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.resume-header {
+ letter-spacing: .1em;
+  line-height: 1.5em;
+  border-bottom: solid 2px black;
+  text-align: center;
+}
+
+/* Projects Section */
+
+.scroll-instructions {
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 2em;
+  position: relative;
+  text-align: center;
+  bottom: 1em;
+}
+
+.swipe-icons {
+  padding: 0;
+  margin: 0 3%;
+
+}
+
+.carousel {
+  height: 700px;
+}
+
+.carousel .carousel-item{
+  width: 400px;
+  height: 250px;
+}
+
+.card-links {
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 100%;
+    border-top: solid 1px black;
+    margin: 0px 0;
+    padding: 15px;
+}
+
+.card .card-reveal .card-title {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.card .card-reveal {
+  line-height: 1.7em;
+}
+
+.card .card-reveal p {
+  margin-bottom: 15px
+}
+
+/* Contact Section */
+
+.contact-image-container  {
+  height: 80vh;
+  width: 100%;
+  background-image: url(./photos/discussion.jpg);
+  /* photo by Nik MacMillan @nikarthur on unsplash */
+  background-size: cover;
+}
+.contact-image  {
+  height: 100%;
+  width: 100%;
+}
+
+.talk-section {
+  z-index: 1000;
+  float: left;
+  font-weight: 700;
+  color: white;
+  position: relative;
+  bottom: -10%;
+  left: 5%;
+}
+
+.contact-me-buttons {
+  display: inline-flex;
+  align-content: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.contact-button {
+  background-color: transparent;
+  color: black;
+  padding: 5px;
+  border: solid 2px black;
+  width: 100%;
+  text-align: center;
+  margin: 0 5%;
+
+}
+
+.contact-button:hover {
+  background-color: transparent;
+  color: rgb(123, 123, 123);
+  border: solid 2px rgb(172, 171, 171);
+  position: relative;
+  bottom: -2px;
+  left: 2px;  
+
+}
+
+/* scaling up media queries */
+@media (min-width: 400px) {
+
+.parallax-container {
+  height: 280px;
+  -webkit-transition: height 3s; /* For Safari 3.1 to 6.0 */
+  transition: height 3s;
+}
+
+.parallax img {
+  max-width: 80%;
+}
+
+.header {
+  /* text-decoration: underline; */
+ text-align: left;
+}
+
+.links {
+  display: inline-flex;
+  justify-content: end;
+  position: relative;
+  left: -3%;
+}
+
+.swipe-icons {
+  padding: 0;
+  margin: 0;
+
+}
+
+.resume-header {
+  text-align: left;
+}
+
+}
+@media (min-width: 415px) {
+
+.parallax-container {
+  height: 288px;
+  -webkit-transition: height 3s; /* For Safari 3.1 to 6.0 */
+  transition: height 3s;
+}
+
+.parallax img {
+  max-width: 80%;
+}
+
+}
+
+@media (min-width: 600px) {
+
+.parallax-container {
+  height: 585px;
+  -webkit-transition: height 3s; /* For Safari 3.1 to 6.0 */
+  transition: height 3s;
+}
+
+ .parallax img {
+  max-width: 80%;
+  /* max-width: 60%; */
+}
+
+ .reflect {
+    /* -webkit-box-reflect: below -3px -webkit-gradient(linear, left top, left bottom,  from(transparent), color-stop(29%, transparent), to(rgba(255, 255, 255, 0.72))); */
+    -webkit-transition: top 3s, left 3s, font-size 3s; /* For Safari 3.1 to 6.0 */
+    transition: top 3s, left 3s, font-size 3s;
+    font-size: 3em;
+    /* color: #000000; */
+    /* font-weight:bold; */
+    /* font-family: Arial, Helvetica, sans-serif; */
+       
+    position: absolute;
+    top: 62%;
+    left: 12%;
+}
+}
+@media (min-width: 1200px) {
+
+.parallax-container {
+  height: 665px;
+  -webkit-transition: height 3s; /* For Safari 3.1 to 6.0 */
+  transition: height 3s;
+}
+
+ .parallax img {
+  max-width: 60%;
+}
+  
+ .reflect {
+    -webkit-box-reflect: below -3px -webkit-gradient(linear, left top, left bottom,  from(transparent), color-stop(29%, transparent), to(rgba(255, 255, 255, 0.72)));
+
+    font-size: 3em;
+    
+    font-weight:bold;
+    font-family: Arial, Helvetica, sans-serif;
+       
+    position: absolute;
+    top: 45%;
+    left: 22%;
+}
+}
+
+/* JS manipulation classes */
+
+.fixedLoc {
+  position: fixed;
+  top: 15px;
+  z-index: 1000;
+  /* background-color: red; */
+  width: 100%;
+}
+
+.paraBottomFix {
+  margin-bottom: 70px;
+}

@@ -1,149 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bootstrap Portfolio</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="bootstrap_files/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Armata|Crimson+Text|Monoton" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Nick Brown Developer</title>
+    <link rel="stylesheet" href="./assets/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Monoton|PT+Sans+Caption:400,700|Rajdhani" rel="stylesheet">
+    <link rel="stylesheet" href="./materialize/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
-
 <body>
+    
+<div class="parallax-container" id="pageTop">
+    <div class="parallax">
+        <img src="./assets/photos/puddle.jpg">
+        <!-- photo by Vitalis Hirschmann @hirschmann_photography on unsplash.com -->
+        <div class="heading-parallax-text">
+            <h1 class="reflect">Nick Brown</h1>
+            <!-- <h1>Welcome</h1> -->
+            <!-- <h2>My name is Nick Brown.</h2> -->
+        </div>
+    </div>
+</div>
 
-    <!-- navbar start -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-                    aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html"> &lt; N-B &gt;</a>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="active" href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li>
-                        <a  href="about.html">About Me</a>
-                    </li>
-                </ul>
-            </div>
+<div id="navigationBar">
+    <nav class="styled-nav">
+        <div class="logo"><a href="#pageTop">NDB</a></div>
+        <div class="links" >
+            <ul >
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
     </nav>
-    <!-- navbar end -->
+</div>
 
-    <!-- jumbotron start -->
-    <div class="jumbotron jumbo-styling">
-        <div class="container jumbotron-sub-heading">
-            <h1>Nick Brown</h1>
-            <h2>Full Stack MERN Developer</h2>
+<!-- about me start -->
+
+<div class="section white" id="about">
+    <div class="row container">
+        <h2 class="header">About Me</h2>
+        <div class="about-container">
+            <p class="hello">Hello there, my name is Nick.</p>
+            <p class="quick-pitch">I am a Full Stack Developer with experience using the MERN stack. I design and develop modern themed web applications that
+            provide creative solutions to companies seeking a new audience.</p>
+            <p class="grey-text text-darken-3 lighten-3 about-me-cont">My professional background is rooted in the outdoor industry. I have hands on experience working with the present-day consumer’s
+            and their expectations, in addition to understanding retail shopping habits and the desired user experience when navigating
+            the internet.</p>
+            <p class="grey-text text-darken-3 lighten-3 about-me-cont">With a B.S. from the University of Utah in Environmental Studies and Geography (double major), my formal education is in
+            working with clients to understand their impact on the environment and how reduce their overall stress on the planet.</p>
+            <p class="grey-text text-darken-3 lighten-3 about-me-cont">I have a passion for collaborating in a team environment and look forward to the opportunity to develop continuous integration
+            of past code and implement new and creative code.</p>
+        </div>
+        <div class="learn-more-button">Learn More</div>
+        <div class="hidden-html about-container" id="moreAbout">
+           <div class="skill-list">
+                <h4 class="resume-header">Skills</h4>
+                <div class="list-container">
+                    <ul class="list-column">
+                        <li class="list-row-header">Front End</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <ul>
+                            <li>CSS Flexbox</li>
+                            <li>CSS Grid</li>
+                            <li>CSS Animations</li>
+                        </ul>
+                        <li>JavaScript</li>
+                        <li>jQuery</li>
+                        <li>AJAX Calls</li>
+                        <li>Web APIs</li>
+                        <li>Responsive Design</li>
+                        <li>Twitter Bootstrap</li>
+                        <li>Google Materialize</li>
+                        <li>React.js</li>
+                    </ul>
+                    <ul class="list-column">
+                        <li class="list-row-header">Back End</li>
+                        <li>Node.js</li>
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                        <li>Handlebars.js</li>
+                        <li>Cookies / Local Storage</li>
+                        <li>MVC Design Pattern</li>
+                    </ul>
+                    <ul class="list-column">
+                        <li class="list-row-header">Industry</li>
+                        <li>git / GitHub</li>
+                        <li>Heroku</li>
+                        <li>SEO</li>
+                        <li>Unit Testing</li>
+                    </ul>
+                </div>
+                
+           </div>
+           <div class="">
+                <h4 class="resume-header">Resume</h4>
+                <a  href="./assets/photos/nickBrownResume.pdf" target="_blank">
+                    <p class="click-to-view">Click Image to View</p>
+                    <img class="resume-img-section" src="./assets/photos/resumeScreen2.png" alt="">
+                </a>
+           </div>
+           
         </div>
     </div>
-    <!-- jumborton end-->
+</div>
+<div class="section white" id="portfolio">
 
-    <div class="container">
-        <div class="row">
-
-            <!-- about me section start -->
-            <div class="col-md-7 about-me">
-                <h1 class="content-heading">About Me</h1>
-                <div class="row about-me-head">
-                   
-                    <div class="col-sm-7 col-md-6 about-me-para-1">
-                        <p>
-                            If you are reading this, then you are either a recruiter/company looking for a new addition to your team, or you are an incredibly
-                            lost internet traveler. In the case of the later you may want to see you self to the "go back"
-                            button as this website merely showcases some of my work and a how to contact me, though you are
-                            welcome to stay and explore! In the case of the former, welcome to my portfolio website.
-                        </p>
-                    </div>
-                    <div class="col-sm-5 col-md-6 profile-image-body">
-                        <img class="profile-image-aboutme" src="css/images/nickInPeru.jpg" alt="Profile Picture of Nick Brown.">
-                    </div>
+    <!-- projects carousel start -->
+    <p class="scroll-instructions"><i class="material-icons swipe-icons">keyboard_arrow_left</i>  Swipe Pictures Left or Right to see Projects  <i class="material-icons swipe-icons">keyboard_arrow_right</i></p>
+    <div class="carousel">
+        <div class="carousel-item" href="#one!">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="./assets/photos/theHuntHomepage.png">
                 </div>
-                <div class="row">
-                    <div class="col-md-12 main-para-text">
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">The Hunt
+                        <i class="material-icons right">more_vert</i>
+                    </span>
+                    <div class="card-links">
                         <p>
-                            My name is Nick Brown. I am currently living in Salt Lake City, Utah. I am an avid outdoorsman and can often be found on
-                            a bike, paddleboard, or mountainside exploreing the outdoors. When I am not spending time outside
-                            I am inside most likely reading, writing, or editing code. Around a year ago I found myself looking
-                            for a new challenge in life and was met by the complex world of code. Since then I have spent
-                            my time absorbing as much information as possible from every source I can find.
+                            <a href="https://github.com/nick-d-brown/TheHunt">GitHub</a>
                         </p>
                         <p>
-                            My technical coding skills include experience in: HTML5, CSS3, JavaScript, and soon to be many more languages. As for my
-                            other professional skills, I have spent the majority of my professional career at the retail
-                            cooperative REI (Recreational Equipment Inc.). In that time, I worked my way up from customer
-                            service, to sales, then into the shop as a tech level 1, then onto the dock working in order
-                            fulfillment, and finally as the operations sales lead. While working as an operations lead, I
-                            helped oversee shipping and receiving and inventory management. As a team leader at the store
-                            it was my job to help guide employees working under the operations umbrella in addition to running
-                            our semi-annual store inventory periods and large used gear sales.
-                        </p>
-                        <p>
-                            If you have any questions or inquiries please see the contact me tab at the top of the screen, or click on one of the available
-                            links to my social media accounts. To any of the lost internet travels who are still sticking
-                            around, please click
-                            <a href="http://www.youtube.com" target="_blank">here</a> to find a link to YouTube where your internet wanderings may continue. Thank you for
-                            reading and have a wonderful rest of your day!
-                        </p>
-                        <p>
-                            - Nick Brown
+                            <a href="https://secure-ridge-65789.herokuapp.com/">Website link</a>
                         </p>
                     </div>
+                
                 </div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <img src="css/images/streetInPeru.jpg" class="road-img" alt="Long street in Peru">
-                    </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Job Search Tracker App
+                        <i class="material-icons right">close</i>
+                    </span>
+                    <p>Applying to jobs can be a game of numbers.</p>
+                    <p>When applying to many jobs, it is difficult to track who you have talked to and where you are at in a company’s hiring process.
+                    Fortunately, "The Hunt" is here to help simplify that process and keep you organized.</p>
+                    <p>This app allows a user to create mini place-cards for each company they are interested in or have applied to. They can then
+                    move the card by clicking and dragging it (using the HTML5 Drag and Drop API) to their desired position on the board. The
+                    user can also click the edit button (the small pencil in the left corner of each company's card) to view all the information
+                    they have gathered on a company. It is here that they can also change the position of a company on the board.</p>
+                    <p>To use this application a user simply clicks on the "plus" sign on the top left portion of the screen. The user will then
+                    be prompted to fill out an html form that is nested inside of a modal. This form uses both frontend and backend validation
+                    to make sure the proper kinds of data are stored in the database. The user then will choose where they would like to place
+                    the company they are creating on the board. Delete functionality is also available. Simply click on the "X" in the top right
+                    corner of each company card and select "YES" on the confirm modal.</p>
+                    <p>This web application is primarily single page and focuses on using Node.js, Handlebars.js, Expres.js, and MySQL to store
+                    and present user's data.
+                    </p>
+                    <p>Our hope in creating this app is to provide job seekers the opportunity to have more control and better vision over their
+                    job application process</p>
                 </div>
             </div>
-            <!-- about me section end -->
-
-            <!-- social media links start -->
-            <div class="col-md-4 social-media">
-                <h2 class="social-media-links_heading">Connect with Me</h2>
-                <div class="row">
-                    <div class="col-xs-6">
-                        <a href="https://github.com/nick-d-brown" target="_blank">
-                            <img class="social_media_images" src="css/images/if_github_square_black_107109.png" alt="Logo for GitHub with link to Nick Brown's account.">
-                        </a>
+        </div>
+        <div class="carousel-item" href="#one!">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="./assets/photos/burgerApp.png">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Persistent Burger Menu 
+                        <i class="material-icons right">more_vert</i>
+                    </span>
+                    <div class="card-links">
+                        <p>
+                            <a href="https://github.com/nick-d-brown/burger">GitHub</a>
+                        </p>
+                        <p>
+                            <a href="https://limitless-shore-13190.herokuapp.com/">Website link</a>
+                        </p>
                     </div>
-                    <div class="col-xs-6">
-                        <a href="https://www.linkedin.com/in/nicholas-brown-developer/" target="_blank">
-                            <img class="social_media_images" src="css/images/if_linkedin_square_color_107091.png" alt="Logo for Linkedin with link to Nick Brown's account.">
-                        </a>
-                    </div>
+                
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Persistent Burger Menu
+                        <i class="material-icons right">close</i>
+                    </span>
+                    <p>This app is a burger logger that utilizes MySQL, Node, Express, Handlebars and a homemade ORM (yum!). Following the MVC design
+                    pattern, this app allows users to input into a dynamically generated (using handlebars.js) the burger they want to eat. Upon
+                    submitting the burger into the input form, the burger is automatically added to the website's database and added to the "Burgers
+                    to devour" section on the webpage. In the same section, users have the option to click on the "devour!" button to move the
+                    burger to the "Burgers that have been devoured!" section. Simply put, it allows users to track what burgers they want to
+                    eat and which burgers they have eaten.</p>
+                    <p>This app is a burger logger that utilizes MySQL, Node, Express, Handlebars and a homemade ORM (yum!). Following the MVC design
+                    pattern, this app allows users to input into a dynamically generated (using handlebars.js) the burger they want to eat. Upon
+                    submitting the burger into the input form, the burger is automatically added to the website's database and added to the "Burgers
+                    to devour" section on the webpage. In the same section, users have the option to click on the "devour!" button to move the
+                    burger to the "Burgers that have been devoured!" section. Simply put, it allows users to track what burgers they want to
+                    eat and which burgers they have eaten.</p>
+                  
                 </div>
             </div>
-            <!-- social media links end -->
+        </div>
+        <div class="carousel-item" href="#one!">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="./assets/photos/giphyAPIApp.png">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Gif Search Tool
+                        <i class="material-icons right">more_vert</i>
+                    </span>
+                    <div class="card-links">
+                        <p>
+                            <a href="https://github.com/nick-d-brown/giphy-API-search-tool">GitHub</a>
+                        </p>
+                        <p>
+                            <a href="https://nick-d-brown.github.io/giphy-API-search-tool/">Website link</a>
+                        </p>
+                    </div>
+                
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Gif Search Tool
+                        <i class="material-icons right">close</i>
+                    </span>
+                    <p>This web app is a search tool that utilizes the GIPHY API to pull up 10 gifs that are related to the button that the user
+                    presses. On the web page, below the description, there is are preset buttons that access gifs related to things you might
+                    text your friend. Above these preset buttons there is also a section with an input box and submit button to create new buttons
+                    for the user to click. To "play" the gif, simply click on the image. Below each gif is the parental rating so the user doesn't
+                    accidentally click on a gif with questionable content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item" href="#one!">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="./assets/photos/LiriRepoLandingPage.png">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">CLI Life Helper
+                        <i class="material-icons right">more_vert</i>
+                    </span>
+                    <div class="card-links">
+                        <p>
+                            <a href="https://github.com/nick-d-brown/liri-node-app">GitHub</a>
+                        </p>
+                    </div>
+                
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">CLI Life Helper
+                        <i class="material-icons right">close</i>
+                    </span>
+                    <p>This application utilizes Node.js, web APIs and Vanilla JavaScript logic to access tweets from a user's account, research
+                    information on a specific song, or gather information on a requested movie. It ties together the ability to use web APIs
+                    to access JSON formated data to the display to the user. Through the addition of the dotenv, request, node-spotify, and twitter
+                    npm packages and the OMDB API this app can access the requested data, while keeping the user's API keys and secrets safe.</p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item" href="#one!">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="./assets/photos/forcefinder.png">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Partner Match App
+                        <i class="material-icons right">more_vert</i>
+                    </span>
+                    <div class="card-links">
+                        <p>
+                            <a href="https://github.com/nick-d-brown/force-trainee-partner-program">GitHub</a>
+                        </p>
+                        <p>
+                            <a href="https://mighty-dusk-55616.herokuapp.com/">Website link</a>
+                        </p>
+                    </div>
+                
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Partner Match App
+                        <i class="material-icons right">close</i>
+                    </span>
+                    <p>This project is a mentor/mentee partner app that allows users to complete a survey which, based on their answers, will pair
+                    them with a force mentor and a fellow mentee. As a customized rendition of a "friend finder" app, this allows users to experience
+                    a fun and enjoyable interface and experience, while their data is handled on the backend. A working version of the app can
+                    be found at the link listed above.</p>
+                    <p>To complete the survey a user must click on the button on the main landing page. Upon clicking, the user is redirected to
+                    the survey page where they will be asked Star Wars themed personality questions. Based on their answers a user will be given
+                    a score of 10-50 (not seen by the user) to be used to determine whether they are meant for the dark side or the light side
+                    of the force.</p>
+                    <p>On the backend the server stores the user's name, picture link, and catchphrase. The client-side JavaScript then completes
+                    an AJAX request from the API's get route for the stored JSON response. upon receipt of the data, the client then checks the
+                    users total score against the score of the mentors (5 mentors total) and assigns a mentor to the user. Then the user's score
+                    is checked against the scores of the mentees from most recent to least. If no direct score match is found, it then checks
+                    for scores within 2 points, then 5, and finally 10. If the user doesn't have a match by then, one of 5 default mentees will
+                    match.</p>
+                    <p>Once a mentor and mentee are matched, a Modal will appear with the user's matched pair. When the user clicks the "Home" button
+                    they will return home, and when they click close the inputs reset.</p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item" href="#one!">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="./assets/photos/bamazonRepo.png">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">CLI Storefront
+                        <i class="material-icons right">more_vert</i>
+                    </span>
+                    <div class="card-links">
+                        <p>
+                            <a href="https://github.com/nick-d-brown/bamazon">GitHub</a>
+                        </p>
+                    </div>
+                
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">CLI Storefront
+                        <i class="material-icons right">close</i>
+                    </span>
+                    <p>This Node.js application allows the user to interact with a basic product storefront. Upon starting up the bamazonCustomer.js
+                    file using node the user will be asked whether they would like to make a purchase. If no, the application exits the store.
+                    If yes, the user is asked to enter a product id (from the provided product table) that they would like to purchase. They
+                    then must enter a quatity to purchase.</p>
+                    <p>Upon entering this data the application will first determine whether there is enough product in stock to complete the order.
+                    If no, it then re-prompts the user to place a new order (this time with an acceptable quantity). If yes, then the order is
+                    placed and the total the user owes is totaled. All of the information is displayed to the user. The table is then re-displayed
+                    with updated quantities and the user is again asked whether they would like to make a purchase.</p>
+                    <p>The user also has the ability to access bamazonManager.js. This side of the app allows the user to view all products (including
+                    their quantities), view only the products with low quantity(less than 5 products left), increase the quantity of a product,
+                    and add a new product.</p>
+                    <p>This app is meant to showcase the ability to interact with a server using MySQL and to utilize Node.js as the medium to interact/dislay
+                    the content.</p>
+               
+                </div>
+            </div>
         </div>
     </div>
+</div>
+<div class="contact-image-container">
+     <div class="talk-section">
+        <h2>Interested?</h2>
+        <h2>Lets talk.</h2> 
+    </div>
 
-    <!-- footer start -->
+</div>
 
-    <footer>
-        <div class="container-fluid copyright-styling">
-            <h5> &copy; 2018 Nick Brown</h5>
+<div class="section white" id="contact">
+    <div class="row container">
+        <h2 class="header">Contact</h2>
+        <div class="contact-me-buttons">
+            <a class="contact-button" href="https://github.com/nick-d-brown/" target="_blank">
+                <p>GitHub</p>
+                <p> ○ </p>
+                <p>nick-d-brown</p>
+            </a> 
+            <a class="contact-button" href="https://www.linkedin.com/in/nicholas-brown-developer/" target="_blank">
+                <p>Linkedin</p>
+                <p> ○ </p>
+                <p>nicholas-brown-developer</p>
+            </a> 
+            <a class="contact-button" href="mailto:n.brown.professional@gmail.com?Subject=I%20found%20your%20website!" target="_top">
+                <p>Email Me</p>
+                <p> ○ </p>
+                <p>n.brown.professional@gmail.com</p>
+            </a> 
         </div>
-    </footer>
+    </div>
+</div>
 
-    <!-- footer end -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="bootstrap_files/js/bootstrap.min.js"></script>
+<script src="./assets/jquery-3.3.1.min.js"></script>
+<script src="./materialize/js/materialize.min.js"></script>
+<!-- testing -->
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script src="./assets/logic.js"></script>
+<!-- testing -->
 </body>
-
 </html>
