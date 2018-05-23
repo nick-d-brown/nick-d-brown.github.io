@@ -1,6 +1,4 @@
 $(document).ready(function () {
-    // global variables
-    // var learnFlag = false;
 
     //initializes materialize functionality
     $('.parallax').parallax();

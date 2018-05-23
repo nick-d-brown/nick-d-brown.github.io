@@ -78,8 +78,10 @@ padding: 0 10px;
     transition: top 2s, left 2s, font-size 3s;
     font-size: 3em;
     color: #000000;
-    font-weight:bold;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-weight:bold;
+    font-family: Arial, Helvetica, sans-serif; */
+    font-weight: 600;
+    font-family: 'Cinzel Decorative', cursive;   
     color: white;
     position: absolute;
     top: 54%;
@@ -157,11 +159,11 @@ padding: 0 10px;
   width: 200px
 }
 .list-column li {
-  margin: 5% 0;
+  margin: 10% 0;
   
 }
 
-.list-row-header {
+.list-container .list-column .list-row-header {
   font-size: 1.5em;
   font-weight: 500;
   margin-bottom: 15px;
@@ -265,7 +267,9 @@ padding: 0 10px;
   display: inline-flex;
   align-content: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   width: 100%;
+  /* margin: 2% 0; */
 }
 
 .contact-button {
@@ -275,7 +279,7 @@ padding: 0 10px;
   border: solid 2px black;
   width: 100%;
   text-align: center;
-  margin: 0 5%;
+  margin: 2% 5%;
 
 }
 
@@ -290,6 +294,22 @@ padding: 0 10px;
 }
 
 /* scaling up media queries */
+
+  /* navbar fix for iphon 5 */
+
+@media (max-width: 400px) {
+  .links li {
+    padding: 0px;
+  }
+
+  .links {
+    left: 4%;
+    margin: 0 10px;
+  }
+}
+
+
+
 @media (min-width: 400px) {
 
 .parallax-container {
@@ -360,7 +380,8 @@ padding: 0 10px;
     /* color: #000000; */
     /* font-weight:bold; */
     /* font-family: Arial, Helvetica, sans-serif; */
-       
+    font-weight: 600;
+    font-family: 'Cinzel Decorative', cursive; 
     position: absolute;
     top: 62%;
     left: 12%;
@@ -381,15 +402,22 @@ padding: 0 10px;
  .reflect {
     -webkit-box-reflect: below -3px -webkit-gradient(linear, left top, left bottom,  from(transparent), color-stop(29%, transparent), to(rgba(255, 255, 255, 0.72)));
 
-    font-size: 3em;
-    
+    /* font-size: 3em;
     font-weight:bold;
-    font-family: Arial, Helvetica, sans-serif;
-       
+    font-family: Arial, Helvetica, sans-serif; */
+    font-size: 3.5em;
+    font-weight: 600;
+    font-family: 'Cinzel Decorative', cursive;   
     position: absolute;
     top: 45%;
     left: 22%;
 }
+
+.contact-me-buttons {
+  flex-wrap: nowrap;
+
+}
+
 }
 
 /* JS manipulation classes */
