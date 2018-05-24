@@ -239,6 +239,10 @@ padding: 0 10px;
   margin-bottom: 15px
 }
 
+.card {
+  z-index: 900;
+}
+
 /* Contact Section */
 
 .contact-image-container  {
@@ -254,7 +258,7 @@ padding: 0 10px;
 }
 
 .talk-section {
-  z-index: 1000;
+  z-index: 900;
   float: left;
   font-weight: 700;
   color: white;
